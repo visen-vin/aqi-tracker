@@ -100,6 +100,25 @@ src/
 - [ ] **PWA Support**: Installable mobile web app experience.
 - [ ] **Notifications**: Alerts when AQI breaches safe limits.
 
+## 📚 Resources & Acknowledgements
+
+This project was made possible by these incredible open-source tools and data providers:
+
+### 📡 APIs & Data
+*   **[Open-Meteo](https://open-meteo.com/)**: The core engine powering our Air Quality and Weather data. An amazing free, open-source API.
+*   **[BigDataCloud](https://www.bigdatacloud.com/)**: Used for high-precision client-side reverse geocoding to detect city names from coordinates.
+
+### 🎨 Design & Icons
+*   **[Lucide React](https://lucide.dev/)**: Beautiful, consistent, and lightweight icon pack.
+*   **[Tailwind CSS](https://tailwindcss.com/)**: The utility-first CSS framework that enables our rapid, custom UI development.
+*   **[Framer Motion](https://www.framer.com/motion/)**: For the buttery smooth animations and "weightless" feel.
+*   **[Recharts](https://recharts.org/)**: Composable charting library used for the trend visualization.
+
+### ⚛️ Core Libraries
+*   **[React 19](https://react.dev/)**: The latest version of the web's most popular library.
+*   **[Redux Toolkit](https://redux-toolkit.js.org/)**: For efficient state management and RTK Query data fetching.
+*   **[Vite](https://vitejs.dev/)**: Next-generation frontend tooling.
+
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
