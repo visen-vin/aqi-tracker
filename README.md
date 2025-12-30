@@ -1,16 +1,109 @@
-# React + Vite
+# 🌍 Antigravity AQI Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **Breathe Smarter.** A next-generation, real-time Air Quality Index (AQI) monitoring application built for precision, aesthetics, and speed.
 
-Currently, two official plugins are available:
+![Project Status](https://img.shields.io/badge/Status-Active_Development-blue?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Redux](https://img.shields.io/badge/Redux_Toolkit-Query-764ABC?style=for-the-badge&logo=redux)
+![Tailwind](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?style=for-the-badge&logo=tailwind-css)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📖 Overview
 
-## React Compiler
+The **Antigravity AQI Tracker** is a high-performance web dashboard designed to provide users with accurate, real-time air quality data for their location and major cities worldwide. Built with a "Weightless Elegance" design philosophy, it combines deep atmospheric data with a stunning, glassmorphic UI.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Unlike standard weather apps, this tracker focuses specifically on detailed pollutant breakdowns (PM2.5, PM10, NO2, SO2, O3, CO) and provides health-centric insights using both **US EPA** and **Indian CPCB** standards (configurable).
 
-## Expanding the ESLint configuration
+## ✨ Key Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🟢 Live Dashboard
+- **Real-time AQI Gauge**: A visually immersive gauge that dynamically changes color and theme based on pollution levels.
+- **Auto-Geolocation**: Instantly detects your current location to show hyper-local air quality data.
+- **Comprehensive Pollutants**: Detailed tracking of PM2.5, PM10, Nitrogen Dioxide, Sulfur Dioxide, Carbon Monoxide, and Ozone.
+- **Weather Integration**: Seamlessly integrated live weather context (Temperature, Humidity, Wind Speed) powered by Open-Meteo.
+
+### 📈 Data Visualization
+- **Interactive Trend Charts**: Visualise AQI history over the last 24 hours to spot pollution patterns.
+- **Glassmorphic UI**: A premium, dark-mode-first interface using backdrop blurs and smooth Framer Motion animations.
+
+### 🌐 Global Monitoring (In Development)
+- **City Comparisons**: Compare your air quality against major metro cities like Delhi, Mumbai, and New York.
+- **Global Rankings**: (Coming Soon) A dynamic leaderboard of the world's most polluted cities.
+- **Interactive Map**: (Coming Soon) A 3D globe view of air quality hotspots.
+
+## 🛠️ Technology Stack
+
+This project is engineered for performance and scalability:
+
+*   **Frontend Core**: React 19 (Vite)
+*   **State Management**: Redux Toolkit & RTK Query (Caching, Polling, Optimistic Updates)
+*   **Styling**: Tailwind CSS & Vanilla CSS Variables
+*   **Animations**: Framer Motion
+*   **Data Visualization**: Recharts
+*   **Icons**: Lucide React
+*   **APIs**:
+    *   **Open-Meteo**: For high-precision Air Quality & Weather data.
+    *   **BigDataCloud**: For reverse geocoding (Coordinates to City Name).
+
+## 🚀 Getting Started
+
+Follow these steps to run the project locally:
+
+### Prerequisites
+*   Node.js (v18 or higher)
+*   npm or yarn
+
+### Installation
+
+1.  **Clone the repository**
+    ```bash
+    git clone https://github.com/visen-vin/aqi-tracker.git
+    cd aqi-tracker
+    ```
+
+2.  **Install dependencies**
+    ```bash
+    npm install
+    ```
+
+3.  **Run the development server**
+    ```bash
+    npm run dev
+    ```
+
+4.  **Open in Browser**
+    Navigate to `http://localhost:5173` to view the app.
+
+## 📂 Project Structure
+
+```bash
+src/
+├── components/         # Reusable UI components
+│   ├── common/         # Header, Footer, Loaders
+│   ├── dashboard/      # Dashboard-specific widgets (Gauge, Charts)
+│   └── layout/         # Layout wrappers (Atmosphere background)
+├── config/             # App-wide configuration
+├── screens/            # Main Page Views (Dashboard, Rankings, Map)
+├── store/              # Redux State Management
+│   ├── api/            # RTK Query API definitions
+│   └── slices/         # Redux Slices
+├── utils/              # Helper functions (AQI Calculation logic)
+└── App.jsx             # Main Application Entry
+```
+
+## 🔮 Roadmap
+
+- [x] **Core Dashboard**: Live Data, Pollutants, Trends.
+- [x] **Comparing Cities**: Basic static comparison.
+- [ ] **Global Rankings**: Integration with dynamic ranking APIs.
+- [ ] **Heatmap**: Visual map overlay for pollution intensity.
+- [ ] **PWA Support**: Installable mobile web app experience.
+- [ ] **Notifications**: Alerts when AQI breaches safe limits.
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📄 License
+
+This project is open-source and available under the [MIT License](LICENSE).
