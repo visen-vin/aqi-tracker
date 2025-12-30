@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-bg-deep text-text-primary antialiased overflow-x-hidden;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 64px;
+  }
+}
+
+@layer components {
+
+  /* Glassmorphism Utilities handled via utility classes mostly, 
+     but we can define a complex class if repeated often */
+  .glass-panel {
+    @apply bg-bg-layer-1 backdrop-blur-xl border border-border-light rounded-2xl shadow-sm;
+  }
+
+  .glass-header {
+    @apply bg-[rgba(11, 15, 25, 0.85)] backdrop-blur-xl border-b border-border-light;
+  }
+
+  .container-custom {
+    @apply w-full max-w-[1440px] mx-auto px-4 md:px-6 lg:px-8;
+  }
+}
